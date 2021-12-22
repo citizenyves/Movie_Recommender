@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MOVIE RECOMMENDATION</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <form action="greet", method="get">
+            {% for message in get_flashed_messages()%}
+                <p> {{message}} </p>
+            {% endfor %}
+            <br>
+            <br>
+            title : {{recommendation.title}}
+            genre : {{recommendation.genre}}
+            rate : {{recommendation.rate}}
+            <br>
+            <br>
+            <input type="button" value="뒤로가기" onclick="history.back(-1);">
+        </form>
+    </body>
+</html>
+

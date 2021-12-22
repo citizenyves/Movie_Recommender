@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MOVIE RECOMMENDATION</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <img src="https://assets.bigcartel.com/account_images/4049892/SAY+HELLO+LOGO.png?auto=format&fit=max&h=1200&w=1200">
+        <br>
+        <form action="greet", method="post">
+            {% for message in get_flashed_messages()%}
+                <p> {{message}} </p>
+            {% endfor %}
+            <br>
+            <select name="name_input">
+                <option selected>-- SELECT --</option>
+                <option >{{value0}}</option>
+                <option >{{value1}}</option>
+                <option >{{value2}}</option>
+                <option >{{value3}}</option>
+                <option >{{value4}}</option>
+                <option >{{value5}}</option>
+                <option >{{value6}}</option>
+                <option >{{value7}}</option>
+                <option >{{value8}}</option>
+                <option >{{value9}}</option>
+                <option >{{value10}}</option>
+                <option >{{value11}}</option>
+                <option >{{value12}}</option>
+                <option >{{value13}}</option>
+                <option >{{value14}}</option>
+                <option >{{value15}}</option>
+                <option >{{value16}}</option>
+                <option >{{value17}}</option>
+                <option >{{value18}}</option>
+                <option >{{value19}}</option>
+                <option >{{value20}}</option>
+                <option >{{value21}}</option>
+                <option >{{value22}}</option>
+                <option >{{value23}}</option>
+                <option >{{value24}}</option>
+                <option >{{value25}}</option>
+                <option >{{value26}}</option>
+                <option >{{value27}}</option>
+                <option >{{value28}}</option>
+                <option >{{value29}}</option>
+                <option >{{value30}}</option>
+                <option >{{value31}}</option>
+                <option >{{value32}}</option>
+                <option >{{value33}}</option>
+                <option >{{value34}}</option>
+                <option >{{value35}}</option>
+                <option >{{value36}}</option>
+                <option >{{value37}}</option>
+                <option >{{value38}}</option>
+                <option >{{value39}}</option>
+                <option >{{value40}}</option>
+                <option >{{value41}}</option>
+                <option >{{value42}}</option>
+                <option >{{value43}}</option>
+                <option >{{value44}}</option>
+                <option >{{value45}}</option>
+                <option >{{value46}}</option>
+                <option >{{value47}}</option>
+                <option >{{value48}}</option>
+                <option >{{value49}}</option>
+                <option >{{value50}}</option>                
+            </select>
+            <br>
+            <input type="submit" value="GREET" id="greet">
+        </form>
+    </body>
+</html>
+
